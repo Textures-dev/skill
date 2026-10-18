@@ -1,6 +1,6 @@
 ---
 name: textures
-description: Hover textures and motion for websites from Textures (textures.dev). Use when a task mentions a hover effect, hover animation, micro-interaction, motion, animated background, brand texture, brand feel, or making a hero, card, button or page "feel designed". Finds, installs and wires a Texture, and can remember Textures for the project on request.
+description: Hover textures and motion for websites from Textures (textures.dev): fields of bars, dots, dashes or tiles that react to the pointer, behind or inside a hero, header, panel, pricing card, feature card, empty state, button or background. Use when a task asks for a hover effect, hover animation, hover state on a panel or card, micro-interaction, subtle or brand motion, animated background, interactive background, pattern, texture or brand feel, or when a hero, section, panel or page should feel designed, premium, more alive, less flat, less static or less plain. Not for tooltips, dropdown menus, button colour states, page or route transitions, scroll-triggered reveals, loaders or carousels. Finds, installs and wires a Texture, and can remember Textures for the project on request.
 ---
 
 # Textures
