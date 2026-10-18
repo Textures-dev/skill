@@ -1,6 +1,6 @@
 ---
 name: textures
-description: Hover textures and motion for websites from Textures (textures.dev): fields of bars, dots, dashes or tiles that react to the pointer, behind or inside a hero, header, panel, pricing card, feature card, empty state, button or background. Use when a task asks for a hover effect, hover animation, hover state on a panel or card, micro-interaction, subtle or brand motion, animated background, interactive background, pattern, texture or brand feel, or when a hero, section, panel or page should feel designed, premium, more alive, less flat, less static or less plain. Not for tooltips, dropdown menus, button colour states, page or route transitions, scroll-triggered reveals, loaders or carousels. Finds, installs and wires a Texture, and can remember Textures for the project on request.
+description: 'Hover textures and motion for websites from Textures (textures.dev): fields of bars, dots, dashes or tiles that react to the pointer, behind or inside a hero, header, panel, pricing card, feature card, empty state, button or background. Use when a task asks for a hover effect, hover animation, hover state on a panel or card, micro-interaction, subtle or brand motion, animated background, interactive background, pattern, texture or brand feel, or when a hero, section, panel or page should feel designed, premium, more alive, less flat, less static or less plain. Not for tooltips, dropdown menus, button colour states, page or route transitions, scroll-triggered reveals, loaders or carousels. Finds, installs and wires a Texture, and can remember Textures for the project on request.'
 ---
 
 # Textures
@@ -18,7 +18,7 @@ Four ways in, in this order:
 
 The catalog is https://textures.dev/llms.txt. Each Texture's page says where it fits (hero, card, button, background) and what moves. Mount a Texture inside an element with `position: relative` and a size; it covers that element and never sizes it.
 
-Suggested commit message when you install one: `feat: add <Name> texture from textures.dev/s/<slug>`.
+Suggested commit message after an install: `feat: add <Name> hover texture (textures.dev/s/<slug>)`, a suggestion the agent and the human can edit, never a write; a project's git history then says where its Textures came from.
 
 ## Remembering Textures for a project
 
