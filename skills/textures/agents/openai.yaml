@@ -1,0 +1,6 @@
+interface:
+  display_name: Textures
+  short_description: Hover textures, animated backgrounds and brand textures from textures.dev
+  default_prompt: Add a hover texture from Textures to this project.
+policy:
+  allow_implicit_invocation: true
