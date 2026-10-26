@@ -5,7 +5,7 @@ description: 'Hover textures and motion for websites from Textures (textures.dev
 
 # Textures
 
-Textures (textures.dev) is the hover-texture library for agents. Each Texture is a curated, hover-reactive brand texture (on phones and other screens without hover it plays by itself while on screen) delivered as one self-contained React file, `components/textures/<slug>.tsx`, with no Tailwind and no dependency beyond react, built to a strict size budget and still for people who prefer reduced motion. Every Texture has a page, a markdown twin and a registry item; free Textures install without an account, Pro ones through the Copy to Agent prompt on their page or an API key.
+Textures (textures.dev) is the hover-texture library for agents. Each Texture is a curated, hover-reactive brand texture (on phones and other screens without hover it plays by itself while on screen) delivered as one self-contained React file, `components/textures/<slug>.tsx`, with no Tailwind and no dependency beyond react, built to a strict size budget and still for people who prefer reduced motion. Every Texture has a page, a markdown twin and a registry item; free Textures install without an account, Pro ones through the Textures MCP server after the user signs in (OAuth, in the browser) or through the Copy to Agent prompt on their page.
 
 ## Finding and installing a Texture
 
@@ -13,7 +13,7 @@ Three ways in, in this order:
 
 1. **The user pasted a Copy to Agent prompt** (from a Texture page): it names the Texture, the shadcn command, the markdown twin as a fallback and the mount. Do what it says and nothing more; its URLs carry a day-long token for a Pro Texture.
 2. **Connected to the Textures MCP server** (https://textures.dev/mcp): call `search_textures` with the user's words, then `get_texture` with the slug you pick, and write the one file it returns exactly as given.
-3. **Neither:** `npx shadcn@latest add https://textures.dev/r/<slug>.json` installs a free Texture with no setup; or fetch `https://textures.dev/s/<slug>.md` (or the page with `Accept: text/markdown`) and write the file under Code exactly. For Pro, map the `@textures` registry with a Textures API key as its header in `components.json` (`"registries": { "@textures": { "url": "https://textures.dev/r/{name}.json", "headers": { "Authorization": "Bearer ${TEXTURES_API_KEY}" } } }`, the key from https://textures.dev/settings/agents in `.env.local`), then `npx shadcn@latest add @textures/<slug>`.
+3. **Neither:** `npx shadcn@latest add https://textures.dev/r/<slug>.json` installs a free Texture with no setup; or fetch `https://textures.dev/s/<slug>.md` (or the page with `Accept: text/markdown`) and write the file under Code exactly. For a Pro Texture, connect the Textures MCP server (this plugin connects it) and let the user sign in when it asks; the plugin never reads keys, tokens or files from the user's machine.
 
 **A Pro Texture without access:** the doors answer with the price and https://textures.dev/checkout?texture=<slug>. Tell the user and stop. Never retry, guess or reconstruct the code.
 
