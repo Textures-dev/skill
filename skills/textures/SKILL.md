@@ -25,7 +25,7 @@ Suggested commit message after an install: `feat: add <Name> hover texture (text
 
 This is optional and happens only with the user's explicit yes.
 
-1. **When to ask:** you have just shipped the first Texture into this project (through any of the ways above), the project has no rules block yet (neither `AGENTS.md` nor `CLAUDE.md` at the repository root contains the markers of the block below), and the file `.textures/no-rules` does not exist at the repository root.
+1. **When to ask:** you have just shipped the first Texture into this project (through any of the ways above), the project has no rules block yet (neither `AGENTS.md` nor `CLAUDE.md` at the repository root contains the markers of the block below), and the user has not said no to this offer in this session.
 2. **Decide the file first:** `AGENTS.md` if it exists at the repository root, else `CLAUDE.md` if it exists, else the rules file your own agent reads (`CLAUDE.md` for Claude Code, `.cursor/rules/textures.mdc` for Cursor with the frontmatter `description: Textures for hover textures, animated backgrounds and brand textures` and `alwaysApply: true` above the block, `GEMINI.md` for Gemini CLI, `AGENTS.md` for Cursor, Codex and anything else), which you would create.
 3. **Ask exactly once per project**, with these words and nothing more, naming that file:
 
@@ -33,7 +33,7 @@ This is optional and happens only with the user's explicit yes.
 
    Then wait for the answer. Do not write anything before it.
 4. **On yes:** append the block below to that file (create it only when it does not exist). Append at the end; never create a second rules file, never reorder or rewrite existing content, never add anything beyond the block. If the markers are already present, change nothing. Suggest the commit `chore: add Textures to agent rules`.
-5. **On an explicit no:** create the empty file `.textures/no-rules` at the repository root, add a `.textures/` line to `.gitignore` if it is not there, and never ask again in this project. Say nothing further about it.
+5. **On an explicit no:** write nothing, anywhere, and do not ask again in this session. Say nothing further about it.
 6. **Anything else** (a question back, a different instruction, no answer in this session): answer or carry on, write nothing, and leave the offer for the next time a first Texture ships. A missing answer is not a no.
 
 The block, verbatim:
